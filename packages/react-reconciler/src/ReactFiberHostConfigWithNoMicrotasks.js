@@ -21,3 +21,6 @@ function shim(...args: any) {
 // Test selectors (when unsupported)
 export const supportsMicrotasks = false;
 export const scheduleMicrotask = shim;
+export const supportsFrameEndTask = false;
+export const scheduleFrameEndTask = shim;
+export const cancelFrameEndTask = shim;
